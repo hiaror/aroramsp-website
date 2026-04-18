@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>About · AroraMSP</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/site.css?v=9" />
+<script>
+  window.TWEAKS = /*EDITMODE-BEGIN*/{
+    "accent": "#0078d4",
+    "density": "comfortable",
+    "showGridBg": true
+  }/*EDITMODE-END*/;
+</script>
+<style>
+  .about { display: grid; grid-template-columns: 1.1fr .9fr; gap: 48px; align-items: start; }
+  @media (max-width: 900px) { .about { grid-template-columns: 1fr; gap: 32px; } }
+  .about-lead p { font-size: 15px; color: var(--fg-dim); margin: 0 0 10px; max-width: 58ch; }
+  .about-lead .sig { font-family: var(--mono); font-size: 12px; color: var(--fg-mute); margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--line); }
+  .about-card { border: 1px solid var(--line); border-radius: 12px; background: var(--bg-1); padding: 18px; }
+  .about-card .row { display: flex; gap: 14px; padding: 7px 0; border-bottom: 1px dashed var(--line); font-family: var(--mono); font-size: 12px; }
+  .about-card .row:last-child { border-bottom: none; }
+  .about-card .row .k { color: var(--fg-mute); min-width: 100px; flex-shrink: 0; }
+  .about-card .row .v { color: var(--fg); }
+  .about-card .row .v .hl { color: var(--cyan); }
+  .about-card .head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px; padding-bottom: 12px; border-bottom: 1px solid var(--line); font-family: var(--mono); font-size: 11px; color: var(--fg-mute); text-transform: uppercase; letter-spacing: .06em; }
+  .certs { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 14px; }
+  @media (max-width: 560px) { .certs { grid-template-columns: 1fr; } }
+  .cert { border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; font-family: var(--mono); font-size: 12px; display: flex; align-items: center; gap: 10px; background: var(--bg-2); }
+  .cert .ms { width: 16px; height: 16px; flex-shrink: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 1px; }
+  .cert .ms span { background: var(--accent); }
+  .cert .ms span:nth-child(2) { background: color-mix(in oklab, var(--accent) 70%, #fff); }
+  .cert .ms span:nth-child(3) { background: color-mix(in oklab, var(--accent) 85%, #000); }
+  .cert .ms span:nth-child(4) { background: color-mix(in oklab, var(--accent) 50%, #fff); }
+  .cert .n { color: var(--fg-dim); font-size: 10px; }
+  .cert .t { color: var(--fg); font-size: 12px; }
+</style>
+</head>
+<body data-page="about">
+<main>
+  <section class="page wrap">
+    <div class="page-head">
+      <div class="sec-label">04 · about</div>
+      <h2>9 years at Microsoft. Independent now.</h2>
+    </div>
+
+    <div class="about">
+      <div class="about-lead">
+        <p>
+          I spent nearly a decade inside Microsoft as a Cloud Support Engineer, working every
+          escalation path across Exchange Online, Entra ID, and Intune for 50M+ customers in
+          North America, Europe, and Asia Pacific.
+        </p>
+        <p>
+          Today I lead M365 and endpoint security at a leading global enterprise, driving
+          Copilot adoption, Intune rollouts, and hybrid identity at scale. AroraMSP is how I
+          bring that same enterprise-grade work to small and mid-sized businesses, without
+          the Big 4 invoice.
+        </p>
+        <p>
+          I know how the platform works at its deepest level, not just how to use it. That
+          means fewer tickets, fewer workarounds, and fewer "well, that's just how Microsoft
+          works" shrugs.
+        </p>
+        <div class="sig">// Himanshu Arora · founder, AroraMSP</div>
+
+        <div class="certs">
+          <div class="cert">
+            <div class="ms"><span></span><span></span><span></span><span></span></div>
+            <div><div class="n">M365 Certified</div><div class="t">Administrator Expert</div></div>
+          </div>
+          <div class="cert">
+            <div class="ms"><span></span><span></span><span></span><span></span></div>
+            <div><div class="n">Microsoft Certified</div><div class="t">Identity &amp; Access Admin</div></div>
+          </div>
+          <div class="cert">
+            <div class="ms"><span></span><span></span><span></span><span></span></div>
+            <div><div class="n">Microsoft Certified</div><div class="t">Azure Fundamentals</div></div>
+          </div>
+          <div class="cert">
+            <div class="ms"><span></span><span></span><span></span><span></span></div>
+            <div><div class="n">MCSE</div><div class="t">Productivity Solutions Expert</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-card">
+        <div class="head"><span>// profile</span><span>v12.arora</span></div>
+        <div class="row"><span class="k">name</span><span class="v">Himanshu Arora</span></div>
+        <div class="row"><span class="k">role</span><span class="v">founder · principal consultant</span></div>
+        <div class="row"><span class="k">prior</span><span class="v"><span class="hl">9 yrs</span> @ Microsoft</span></div>
+        <div class="row"><span class="k">experience</span><span class="v"><span class="hl">12+ years</span> M365</span></div>
+        <div class="row"><span class="k">depth</span><span class="v">Exchange · Entra · Intune</span></div>
+        <div class="row"><span class="k">stack</span><span class="v">PowerShell · Graph API · Entra · Intune</span></div>
+        <div class="row"><span class="k">regions</span><span class="v">worldwide</span></div>
+        <div class="row"><span class="k">status</span><span class="v"><span style="color:var(--good)">●</span> accepting clients</span></div>
+      </div>
+    </div>
+  </section>
+</main>
+<script src="assets/site.js?v=9"></script>
+</body>
+</html>

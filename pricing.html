@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Pricing · AroraMSP</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/site.css?v=9" />
+<script>
+  window.TWEAKS = /*EDITMODE-BEGIN*/{
+    "accent": "#0078d4",
+    "density": "comfortable",
+    "showGridBg": true
+  }/*EDITMODE-END*/;
+</script>
+<style>
+  .pricing { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; max-width: 860px; }
+  @media (max-width: 760px) { .pricing { grid-template-columns: 1fr; } }
+  .pricing { align-items: stretch; }
+  .tier { border: 1px solid var(--line); border-radius: 12px; padding: 22px; background: var(--bg-1); position: relative; display: flex; flex-direction: column; height: 100%; }
+  .tier.featured { border-color: var(--accent-line); background: linear-gradient(180deg, color-mix(in oklab, var(--accent) 6%, var(--bg-1)) 0%, var(--bg-1) 60%); box-shadow: 0 0 0 1px var(--accent-line), 0 20px 40px -20px color-mix(in oklab, var(--accent) 30%, transparent); }
+  .tier .badge { position: absolute; top: -10px; right: 20px; background: var(--accent); color: white; font-family: var(--mono); font-size: 10px; padding: 4px 10px; border-radius: 4px; letter-spacing: .04em; }
+  .tier-name { font-family: var(--mono); font-size: 12px; color: var(--accent); margin-bottom: 6px; text-transform: uppercase; letter-spacing: .06em; }
+  .tier h3 { margin: 0 0 6px; font-size: 20px; font-weight: 600; letter-spacing: -.01em; }
+  .tier .sub { color: var(--fg-dim); font-size: 13px; margin-bottom: 16px; min-height: 34px; }
+  .tier .price { font-family: var(--mono); margin-bottom: 16px; padding-bottom: 16px; border-bottom: 1px dashed var(--line); }
+  .tier .price .amt { font-size: 30px; font-weight: 600; color: var(--fg); letter-spacing: -.02em; }
+  .tier .price .per { color: var(--fg-mute); font-size: 13px; margin-left: 4px; }
+  .tier .price .note { display: block; color: var(--fg-mute); font-size: 11px; margin-top: 4px; }
+  .tier ul { list-style: none; padding: 0; margin: 0 0 18px; font-size: 13px; flex: 1; }
+  .tier ul li { padding: 4px 0 4px 20px; position: relative; color: var(--fg-dim); }
+  .tier ul li::before { content: ""; position: absolute; left: 0; top: 11px; width: 10px; height: 2px; background: var(--accent); }
+  .tier .btn { justify-content: center; width: 100%; }
+  .pricing-note { font-family: var(--mono); font-size: 12px; color: var(--fg-mute); margin-top: 24px; max-width: 860px; padding: 14px 18px; border: 1px dashed var(--line); border-radius: 8px; }
+  .pricing-note b { color: var(--fg-dim); font-weight: 500; }
+</style>
+</head>
+<body data-page="pricing">
+<main>
+  <section class="page no-center wrap">
+    <div class="page-head">
+      <div class="sec-label">03 · pricing</div>
+      <h2>Fixed-fee projects. No hourly games.</h2>
+      <p>Two scoped offers that cover 90% of engagements. Anything custom gets quoted after the discovery call.</p>
+    </div>
+
+    <div class="pricing">
+      <div class="tier">
+        <div class="tier-name">// audit</div>
+        <h3>Tenant Health Check</h3>
+        <div class="sub">A full read-only audit of your M365 tenant with a prioritised action list.</div>
+        <div class="price">
+          <span class="amt">$1,500</span>
+          <span class="per">· one-time</span>
+          <span class="note">USD · delivered in 5 business days</span>
+        </div>
+        <ul>
+          <li>Security and identity review</li>
+          <li>License utilization map</li>
+          <li>Mail flow and DNS review</li>
+          <li>Prioritised findings doc</li>
+          <li>60-minute walkthrough call</li>
+        </ul>
+        <a href="contact.html" class="btn btn-ghost">Start an audit →</a>
+      </div>
+
+      <div class="tier featured">
+        <div class="badge">MOST POPULAR</div>
+        <div class="tier-name">// project</div>
+        <h3>Migration or Rebuild</h3>
+        <div class="sub">End-to-end M365 migration or tenant rebuild. Scoped and fixed-fee.</div>
+        <div class="price">
+          <span class="amt">from $4,500</span>
+          <span class="note">scoped after audit · typically $4.5k to $18k</span>
+        </div>
+        <ul>
+          <li>Everything in the Health Check</li>
+          <li>Migration or clean rebuild</li>
+          <li>Security baseline and Intune</li>
+          <li>SPF / DKIM / DMARC enforced</li>
+          <li>Documentation and training session</li>
+          <li>30 days post-launch support</li>
+        </ul>
+        <a href="contact.html" class="btn btn-primary">Scope a project →</a>
+      </div>
+    </div>
+  </section>
+</main>
+<script src="assets/site.js?v=9"></script>
+</body>
+</html>

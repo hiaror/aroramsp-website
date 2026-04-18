@@ -1,0 +1,31 @@
+<svg viewBox="0 0 340 90" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="AroraMSP" preserveAspectRatio="xMidYMid meet">
+  
+  <rect x="0" y="0" width="90" height="90" rx="16" fill="#1a1f2e"></rect>
+  
+  <rect x="18" y="38" width="54" height="14" rx="3" fill="none" stroke="#0078d4" stroke-width="1.8"></rect>
+  
+  <line x1="25" y1="38" x2="25" y2="28" stroke="#0078d4" stroke-width="1.8"></line>
+  <circle cx="25" cy="24" r="4" fill="none" stroke="#0078d4" stroke-width="1.8"></circle>
+  <line x1="38" y1="38" x2="38" y2="22" stroke="#22d3ee" stroke-width="1.8"></line>
+  <rect x="34" y="16" width="8" height="6" rx="1" fill="#22d3ee"></rect>
+  <line x1="52" y1="38" x2="52" y2="28" stroke="#0078d4" stroke-width="1.8"></line>
+  <circle cx="52" cy="24" r="4" fill="none" stroke="#0078d4" stroke-width="1.8"></circle>
+  <line x1="65" y1="38" x2="65" y2="22" stroke="#22d3ee" stroke-width="1.8"></line>
+  <rect x="61" y="16" width="8" height="6" rx="1" fill="#22d3ee"></rect>
+  
+  <line x1="25" y1="52" x2="25" y2="62" stroke="#0078d4" stroke-width="1.8"></line>
+  <line x1="25" y1="62" x2="38" y2="62" stroke="#0078d4" stroke-width="1.8"></line>
+  <line x1="38" y1="62" x2="38" y2="70" stroke="#0078d4" stroke-width="1.8"></line>
+  <circle cx="38" cy="73" r="3" fill="#0078d4"></circle>
+  <line x1="52" y1="52" x2="52" y2="62" stroke="#22d3ee" stroke-width="1.8"></line>
+  <line x1="52" y1="62" x2="65" y2="62" stroke="#22d3ee" stroke-width="1.8"></line>
+  <line x1="65" y1="62" x2="65" y2="70" stroke="#22d3ee" stroke-width="1.8"></line>
+  <circle cx="65" cy="73" r="3" fill="#22d3ee"></circle>
+  
+  <circle cx="25" cy="45" r="2" fill="#ffffff"></circle>
+  <circle cx="38" cy="45" r="2" fill="#ffffff"></circle>
+  <circle cx="52" cy="45" r="2" fill="#ffffff"></circle>
+  <circle cx="65" cy="45" r="2" fill="#ffffff"></circle>
+  
+  <text x="108" y="60" font-family="Inter, Arial, sans-serif" font-size="44" font-weight="700" fill="#ffffff" letter-spacing="-1.5">Arora<tspan font-weight="300" fill="#0078d4" letter-spacing="1">MSP</tspan></text>
+</svg>

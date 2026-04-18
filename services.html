@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Services · AroraMSP</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/site.css?v=9" />
+<script>
+  window.TWEAKS = /*EDITMODE-BEGIN*/{
+    "accent": "#0078d4",
+    "density": "comfortable",
+    "showGridBg": true
+  }/*EDITMODE-END*/;
+</script>
+<style>
+  .services { display: grid; grid-template-columns: repeat(12, 1fr); gap: 0; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; background: var(--bg-1); }
+  .service { grid-column: span 3; padding: 22px; position: relative; border-right: 1px solid var(--line); transition: background .25s; }
+  .service:hover { background: var(--bg-2); }
+  .service:last-child { border-right: none; }
+  @media (max-width: 1060px) {
+    .service { grid-column: span 6; border-bottom: 1px solid var(--line); }
+    .service:nth-child(2n) { border-right: none; }
+    .service:nth-last-child(-n+2) { border-bottom: none; }
+  }
+  @media (max-width: 560px) {
+    .service { grid-column: span 12; border-right: none !important; border-bottom: 1px solid var(--line) !important; }
+    .service:last-child { border-bottom: none !important; }
+  }
+  .service .n { font-family: var(--mono); font-size: 11px; color: var(--fg-mute); margin-bottom: 14px; display: flex; justify-content: space-between; align-items: center; }
+  .service .n .tag { color: var(--cyan); border: 1px solid var(--cyan-line); padding: 2px 7px; border-radius: 4px; font-size: 10px; }
+  .service h3 { margin: 0 0 10px; font-size: 16px; font-weight: 600; letter-spacing: -.01em; }
+  .service p { margin: 0 0 14px; color: var(--fg-dim); font-size: 13px; }
+  .service ul { list-style: none; padding: 0; margin: 0; font-family: var(--mono); font-size: 12px; color: var(--fg-mute); }
+  .service ul li { padding-left: 16px; position: relative; margin-bottom: 4px; }
+  .service ul li::before { content: "›"; position: absolute; left: 0; color: var(--cyan); }
+</style>
+</head>
+<body data-page="services">
+<main>
+  <section class="page wrap">
+    <div class="page-head">
+      <div class="sec-label">01 · services</div>
+      <h2>Everything Microsoft 365, handled.</h2>
+      <p>Four focused offers. Enterprise depth, no reselling, no middleman markups on licenses.</p>
+    </div>
+
+    <div class="services">
+      <div class="service">
+        <div class="n"><span>01</span><span class="tag">migration</span></div>
+        <h3>M365 Migrations</h3>
+        <p>Zero-downtime moves from Google Workspace, on-prem Exchange, or other tenants. Mail, files, Teams, identities.</p>
+        <ul>
+          <li>Cutover, staged, and hybrid</li>
+          <li>Mailbox, OneDrive, SharePoint</li>
+          <li>Cross-tenant and domain moves</li>
+        </ul>
+      </div>
+      <div class="service">
+        <div class="n"><span>02</span><span class="tag">setup</span></div>
+        <h3>Tenant Setup &amp; Config</h3>
+        <p>Clean build from day one. Identity, Exchange, Teams, SharePoint, and DNS configured to best practice, not defaults.</p>
+        <ul>
+          <li>Entra ID + Conditional Access</li>
+          <li>SPF / DKIM / DMARC / MTA-STS</li>
+          <li>Baseline policies + Intune</li>
+        </ul>
+      </div>
+      <div class="service">
+        <div class="n"><span>03</span><span class="tag">security</span></div>
+        <h3>Security Hardening</h3>
+        <p>Defender, Purview, and Intune configured properly. Close the gaps your previous IT left open.</p>
+        <ul>
+          <li>MFA and passwordless rollout</li>
+          <li>DLP and sensitivity labels</li>
+          <li>Endpoint and mobile compliance</li>
+        </ul>
+      </div>
+      <div class="service">
+        <div class="n"><span>04</span><span class="tag">optimize</span></div>
+        <h3>Licensing Audit</h3>
+        <p>Most SMBs overpay 20 to 40% on M365. I find unused licenses, wrong tiers, and redundant add-ons, then fix them.</p>
+        <ul>
+          <li>Line-by-line license map</li>
+          <li>Right-size E3 / E5 / Business</li>
+          <li>Co-term and renewal strategy</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+<script src="assets/site.js?v=9"></script>
+</body>
+</html>

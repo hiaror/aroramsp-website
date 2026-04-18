@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Contact · AroraMSP</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/site.css?v=9" />
+<script>
+  window.TWEAKS = /*EDITMODE-BEGIN*/{
+    "accent": "#0078d4",
+    "density": "comfortable",
+    "showGridBg": true
+  }/*EDITMODE-END*/;
+</script>
+<style>
+  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; }
+  @media (max-width: 900px) { .contact-grid { grid-template-columns: 1fr; } }
+  .form { display: flex; flex-direction: column; gap: 12px; border: 1px solid var(--line); border-radius: 12px; background: var(--bg-1); padding: 24px; }
+  .field { display: flex; flex-direction: column; gap: 6px; }
+  .field label { font-family: var(--mono); font-size: 11px; color: var(--fg-mute); text-transform: uppercase; letter-spacing: .05em; }
+  .field input, .field textarea, .field select { font-family: var(--sans); font-size: 14px; color: var(--fg); background: var(--bg-2); border: 1px solid var(--line-2); border-radius: 8px; padding: 10px 12px; outline: none; transition: border-color .15s, background .15s; }
+  .field textarea { resize: vertical; min-height: 80px; }
+  .field input:focus, .field textarea:focus, .field select:focus { border-color: var(--accent); background: var(--bg-3); }
+  .field.row { flex-direction: row; gap: 12px; }
+  .field.row > * { flex: 1; }
+  .form-msg { font-family: var(--mono); font-size: 12px; color: var(--good); display: none; }
+  .form-msg.show { display: block; }
+  .contact-side { display: flex; flex-direction: column; gap: 12px; }
+  .cside { border: 1px solid var(--line); border-radius: 10px; background: var(--bg-1); padding: 14px 18px; display: flex; align-items: center; gap: 14px; transition: border-color .2s, background .2s; }
+  .cside:hover { border-color: var(--accent-line); background: var(--bg-2); }
+  .cside .icon { width: 34px; height: 34px; border-radius: 8px; background: var(--bg-3); border: 1px solid var(--line-2); display: grid; place-items: center; color: var(--accent); font-family: var(--mono); font-weight: 600; flex-shrink: 0; }
+  .cside .k { font-family: var(--mono); font-size: 11px; color: var(--fg-mute); text-transform: uppercase; letter-spacing: .05em; }
+  .cside .v { color: var(--fg); font-size: 14px; }
+  .cside .v .hl { color: var(--cyan); }
+</style>
+</head>
+<body data-page="contact">
+<main>
+  <section class="page wrap">
+    <div class="page-head">
+      <div class="sec-label">05 · contact</div>
+      <h2>Let's scope your tenant.</h2>
+      <p>Tell me where it hurts. I'll reply within one business day, usually faster. Discovery calls are free and have no deck.</p>
+    </div>
+
+    <div class="contact-grid">
+      <form class="form" onsubmit="handleSubmit(event)">
+        <div class="field row">
+          <div class="field">
+            <label>Name</label>
+            <input type="text" name="name" required placeholder="Jane Doe" />
+          </div>
+          <div class="field">
+            <label>Company</label>
+            <input type="text" name="company" placeholder="Acme Legal" />
+          </div>
+        </div>
+        <div class="field">
+          <label>Work email</label>
+          <input type="email" name="email" required placeholder="jane@acmelegal.com" />
+        </div>
+        <div class="field row">
+          <div class="field">
+            <label>Users</label>
+            <select name="users">
+              <option>1 to 10</option>
+              <option>11 to 25</option>
+              <option selected>26 to 50</option>
+              <option>51 to 100</option>
+              <option>101 to 250</option>
+              <option>250+</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>Need</label>
+            <select name="need">
+              <option>Tenant audit</option>
+              <option>Migration</option>
+              <option>Security hardening</option>
+              <option>Licensing optimization</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label>What's going on?</label>
+          <textarea name="msg" placeholder="Our Exchange to M365 migration stalled and our last IT provider ghosted us..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send message <span class="arrow">→</span></button>
+        <div class="form-msg" id="formMsg">✓ Sent. I'll reply within one business day.</div>
+      </form>
+
+      <div class="contact-side">
+        <a class="cside" href="mailto:himanshu@aroramsp.com">
+          <div class="icon">@</div>
+          <div>
+            <div class="k">email</div>
+            <div class="v">himanshu@<span class="hl">aroramsp.com</span></div>
+          </div>
+        </a>
+        <a class="cside" href="#">
+          <div class="icon">↗</div>
+          <div>
+            <div class="k">book · 30 min</div>
+            <div class="v">Booking link coming soon · <span class="hl">email to schedule</span></div>
+          </div>
+        </a>
+        <a class="cside" href="https://www.linkedin.com/in/himanshusac/" target="_blank" rel="noopener noreferrer">
+          <div class="icon">in</div>
+          <div>
+            <div class="k">linkedin</div>
+            <div class="v"><span class="hl">/in/</span>himanshusac</div>
+          </div>
+        </a>
+        <a class="cside" href="#">
+          <div class="icon">☏</div>
+          <div>
+            <div class="k">phone</div>
+            <div class="v">Available on request · <span class="hl">email first</span></div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+<script src="assets/site.js?v=9"></script>
+<script>
+  function handleSubmit(e) {
+    e.preventDefault();
+    document.getElementById('formMsg').classList.add('show');
+    e.target.reset();
+  }
+</script>
+</body>
+</html>

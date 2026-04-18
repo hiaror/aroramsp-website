@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Process · AroraMSP</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/site.css?v=9" />
+<script>
+  window.TWEAKS = /*EDITMODE-BEGIN*/{
+    "accent": "#0078d4",
+    "density": "comfortable",
+    "showGridBg": true
+  }/*EDITMODE-END*/;
+</script>
+<style>
+  .process-steps { display: flex; flex-direction: column; gap: 6px; max-width: 820px; }
+  .step { padding: 18px 22px; border: 1px solid var(--line); border-radius: 10px; background: var(--bg-1); cursor: pointer; transition: all .25s; }
+  .step[aria-expanded="true"] { background: var(--bg-2); border-color: var(--accent-line); }
+  .step-head { display: flex; align-items: center; gap: 16px; }
+  .step-num { font-family: var(--mono); font-size: 12px; color: var(--fg-mute); border: 1px solid var(--line-2); padding: 3px 8px; border-radius: 4px; min-width: 34px; text-align: center; }
+  .step[aria-expanded="true"] .step-num { color: var(--cyan); border-color: var(--cyan-line); }
+  .step h4 { margin: 0; font-size: 16px; font-weight: 500; flex: 1; letter-spacing: -.01em; }
+  .step .chev { color: var(--fg-mute); transition: transform .2s; font-family: var(--mono); }
+  .step[aria-expanded="true"] .chev { transform: rotate(90deg); color: var(--cyan); }
+  .step-body { max-height: 0; overflow: hidden; transition: max-height .35s ease, margin .35s ease, opacity .2s; color: var(--fg-dim); font-size: 14px; opacity: 0; }
+  .step[aria-expanded="true"] .step-body { max-height: 300px; margin-top: 14px; padding-left: 50px; opacity: 1; }
+  .step-body .dur { font-family: var(--mono); font-size: 11px; color: var(--cyan); margin-top: 10px; display: inline-block; }
+</style>
+</head>
+<body data-page="process">
+<main>
+  <section class="page wrap">
+    <div class="page-head">
+      <div class="sec-label">02 · process</div>
+      <h2>How we work together.</h2>
+      <p>Four clear stages. Honest timelines. No surprise invoices at the end.</p>
+    </div>
+
+    <div class="process-steps" id="steps">
+      <div class="step" data-step="1" aria-expanded="true">
+        <div class="step-head">
+          <span class="step-num">01</span>
+          <h4>Discovery call</h4>
+          <span class="chev">›</span>
+        </div>
+        <div class="step-body">
+          A 30-minute free call. I ask where it hurts, you tell me what you've tried. No sales pitch, no deck. If I'm not the right fit, I'll say so and point you somewhere that is.
+          <span class="dur">// 30 min · free</span>
+        </div>
+      </div>
+      <div class="step" data-step="2" aria-expanded="false">
+        <div class="step-head">
+          <span class="step-num">02</span>
+          <h4>Tenant audit</h4>
+          <span class="chev">›</span>
+        </div>
+        <div class="step-body">
+          Read-only access to your tenant. I run the full audit covering security posture, identity config, license utilization, and mail flow, and send back a short, plain-English findings doc.
+          <span class="dur">// 3 to 5 days · fixed fee</span>
+        </div>
+      </div>
+      <div class="step" data-step="3" aria-expanded="false">
+        <div class="step-head">
+          <span class="step-num">03</span>
+          <h4>Scoped plan</h4>
+          <span class="chev">›</span>
+        </div>
+        <div class="step-body">
+          You get a prioritised plan: what to fix now, what can wait, and what's nice-to-have. Every item has an effort estimate and a fixed price. You pick what moves forward.
+          <span class="dur">// 1 to 2 days</span>
+        </div>
+      </div>
+      <div class="step" data-step="4" aria-expanded="false">
+        <div class="step-head">
+          <span class="step-num">04</span>
+          <h4>Execution</h4>
+          <span class="chev">›</span>
+        </div>
+        <div class="step-body">
+          I do the work. You get a weekly status note, a live change log, and documentation checked into your own repo or SharePoint. Nothing lives in my head.
+          <span class="dur">// 1 to 3 weeks, scope-dependent</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<script src="assets/site.js?v=9"></script>
+<script>
+  document.querySelectorAll('.step').forEach(step => {
+    step.addEventListener('click', () => {
+      const isOpen = step.getAttribute('aria-expanded') === 'true';
+      document.querySelectorAll('.step').forEach(s => s.setAttribute('aria-expanded', 'false'));
+      if (!isOpen) step.setAttribute('aria-expanded', 'true');
+    });
+  });
+</script>
+</body>
+</html>
