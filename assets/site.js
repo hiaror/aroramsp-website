@@ -7,7 +7,7 @@
     <nav class="nav">
       <div class="wrap nav-inner">
         <a href="index.html" class="brand" aria-label="AroraMSP home">
-          <img src="uploads/arora_msp_logo_v4.svg" alt="AroraMSP" style="height:36px;">
+          <img src="uploads/arora_msp_logo_v4.svg" alt="AroraMSP" style="height:52px;">
         </a>
         <div class="nav-links" id="navLinks">
           <a href="services.html" data-page="services">services</a>
