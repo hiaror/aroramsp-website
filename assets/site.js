@@ -7,31 +7,7 @@
     <nav class="nav">
       <div class="wrap nav-inner">
         <a href="index.html" class="brand" aria-label="AroraMSP home">
-          <svg class="brand-icon" viewBox="0 0 90 90" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <rect x="0" y="0" width="90" height="90" rx="16" fill="#1a1f2e"></rect>
-            <rect x="18" y="38" width="54" height="14" rx="3" fill="none" stroke="#0078d4" stroke-width="2"></rect>
-            <line x1="25" y1="38" x2="25" y2="28" stroke="#0078d4" stroke-width="2"></line>
-            <circle cx="25" cy="24" r="4" fill="none" stroke="#0078d4" stroke-width="2"></circle>
-            <line x1="38" y1="38" x2="38" y2="22" stroke="#22d3ee" stroke-width="2"></line>
-            <rect x="34" y="16" width="8" height="6" rx="1" fill="#22d3ee"></rect>
-            <line x1="52" y1="38" x2="52" y2="28" stroke="#0078d4" stroke-width="2"></line>
-            <circle cx="52" cy="24" r="4" fill="none" stroke="#0078d4" stroke-width="2"></circle>
-            <line x1="65" y1="38" x2="65" y2="22" stroke="#22d3ee" stroke-width="2"></line>
-            <rect x="61" y="16" width="8" height="6" rx="1" fill="#22d3ee"></rect>
-            <line x1="25" y1="52" x2="25" y2="62" stroke="#0078d4" stroke-width="2"></line>
-            <line x1="25" y1="62" x2="38" y2="62" stroke="#0078d4" stroke-width="2"></line>
-            <line x1="38" y1="62" x2="38" y2="70" stroke="#0078d4" stroke-width="2"></line>
-            <circle cx="38" cy="73" r="3" fill="#0078d4"></circle>
-            <line x1="52" y1="52" x2="52" y2="62" stroke="#22d3ee" stroke-width="2"></line>
-            <line x1="52" y1="62" x2="65" y2="62" stroke="#22d3ee" stroke-width="2"></line>
-            <line x1="65" y1="62" x2="65" y2="70" stroke="#22d3ee" stroke-width="2"></line>
-            <circle cx="65" cy="73" r="3" fill="#22d3ee"></circle>
-            <circle cx="25" cy="45" r="2.5" fill="#ffffff"></circle>
-            <circle cx="38" cy="45" r="2.5" fill="#ffffff"></circle>
-            <circle cx="52" cy="45" r="2.5" fill="#ffffff"></circle>
-            <circle cx="65" cy="45" r="2.5" fill="#ffffff"></circle>
-          </svg>
-          <span class="brand-word">Arora<span class="brand-msp">MSP</span></span>
+          <img src="uploads/arora_msp_logo_v4.svg" alt="AroraMSP" style="height:36px;">
         </a>
         <div class="nav-links" id="navLinks">
           <a href="services.html" data-page="services">services</a>
