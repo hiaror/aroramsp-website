@@ -30,6 +30,7 @@
           </div>
           <div class="foot-links">
             <a href="services.html">services</a>
+            <a href="process.html">process</a>
             <a href="pricing.html">pricing</a>
             <a href="about.html">about</a>
           </div>
