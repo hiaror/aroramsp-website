@@ -7,8 +7,8 @@
   --line: #242936;
   --line-2: #2e3344;
   --fg: #e7eaf0;
-  --fg-dim: #a6acbb;
-  --fg-mute: #6b7184;
+  --fg-dim: #e5e7eb;
+  --fg-mute: #cbd5e1;
   --accent: #0078d4;
   --accent-soft: color-mix(in oklab, var(--accent) 20%, transparent);
   --accent-line: color-mix(in oklab, var(--accent) 40%, transparent);
